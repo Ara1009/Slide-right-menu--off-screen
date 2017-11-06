@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="fifthproject" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pexels-photo-243752" translatesAutoresizingMaskIntoConstraints="NO" id="TYR-S8-9a9">
+                                <rect key="frame" x="0.0" y="0.0" width="500" height="667"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WbM-gF-LIC">
+                                <rect key="frame" x="-152" y="0.0" width="150" height="673"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="BfH-NC-777"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bQI-NX-HWF">
+                                <rect key="frame" x="6" y="20" width="37" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="37" id="wpN-bZ-Ewn"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" image="icons8-circled-right"/>
+                                <connections>
+                                    <action selector="ToggleButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qbP-cg-Q1A"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="TYR-S8-9a9" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="U6j-tj-abb"/>
+                            <constraint firstItem="WbM-gF-LIC" firstAttribute="top" secondItem="TYR-S8-9a9" secondAttribute="top" id="Vdy-i3-ldT"/>
+                            <constraint firstItem="TYR-S8-9a9" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="dgr-Gm-e6g"/>
+                            <constraint firstItem="bQI-NX-HWF" firstAttribute="leading" secondItem="WbM-gF-LIC" secondAttribute="trailing" constant="8" symbolic="YES" id="gbY-vw-d3h"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="bQI-NX-HWF" secondAttribute="bottom" constant="610" id="j5X-9m-bIB"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="WbM-gF-LIC" secondAttribute="bottom" constant="-6" id="kfy-5Z-Z3r"/>
+                            <constraint firstItem="bQI-NX-HWF" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="ooV-Fv-gmA"/>
+                            <constraint firstItem="TYR-S8-9a9" firstAttribute="leading" secondItem="WbM-gF-LIC" secondAttribute="trailing" constant="2" id="ovc-b0-7eH"/>
+                            <constraint firstItem="WbM-gF-LIC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="-152" id="rRm-ml-hVJ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="MainView" destination="8bC-Xf-vdC" id="4RX-fM-MMJ"/>
+                        <outlet property="MenuView" destination="WbM-gF-LIC" id="c1N-BG-Me8"/>
+                        <outlet property="ToggleButton" destination="bQI-NX-HWF" id="1ag-Ia-CAf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="123.68815592203899"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icons8-circled-right" width="50" height="50"/>
+        <image name="pexels-photo-243752" width="500" height="750"/>
+    </resources>
+</document>
